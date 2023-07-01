@@ -1,4 +1,4 @@
-namespace MyInterview.LeetCode;
+namespace MyInterview.LeetCode.ValidParentheses;
 
 public class ValidParentheses
 {
@@ -18,16 +18,5 @@ public class ValidParentheses
         }
 
         return data.Count == 0;
-    }
-}
-
-public class ValidParenthesesTest
-{
-    [Theory]
-    [InlineData("()[]", true)]
-    [InlineData("()}[]", false)]
-    public void TestValidParentheses(string s, bool retVal)
-    {
-        Assert.Equal(retVal, ValidParentheses.Run(s));
     }
 }

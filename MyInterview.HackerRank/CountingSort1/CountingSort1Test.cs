@@ -1,20 +1,5 @@
 namespace MyInterview.Test;
 
-//https://www.hackerrank.com/challenges/countingsort1/problem
-public class CountingSort1
-{
-    public static int[] Run(int[] arr)
-    {
-        int[] ret = new int[arr.Length];
-        foreach (int item in arr)
-        {
-            ret[item]++;
-        }
-
-        return new ArraySegment<int>(ret, 0, 100).ToArray();
-    }
-}
-
 public class CountingSort1Test
 {
     [Theory]
@@ -461,7 +446,7 @@ public class CountingSort1Test
                     88, 21, 2, 23, 88, 29, 48, 6, 93, 97, 7, 11, 91, 10, 52, 81, 34, 80, 21, 70, 28, 9, 39, 14, 84, 44,
                     31, 74, 30, 93, 55, 53, 24, 79, 84, 73, 42, 89, 53, 69, 60, 38, 72, 70, 92, 95, 96, 17, 75
                 },
-                new []
+                new[]
                 {
                     95, 116, 77, 87, 87, 94, 85, 97, 100, 106, 92, 102, 105, 102, 123, 106, 91, 112, 96, 97, 107, 88,
                     89, 101, 103, 99, 110, 84, 91, 121, 90, 114, 108, 103, 122, 101, 108, 100, 114, 85, 103, 108, 102,

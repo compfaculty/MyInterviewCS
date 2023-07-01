@@ -1,4 +1,4 @@
-namespace MyInterview.Test;
+namespace MyInterview.Test.SherlockTasks;
 
 // https://www.hackerrank.com/challenges/sherlock-and-anagrams/problem?isFullScreen=true&h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=dictionaries-hashmaps
 public class SherlockAndAnagrams
@@ -20,18 +20,5 @@ public class SherlockAndAnagrams
         foreach (var val in words) ret += val.Value * (val.Value - 1) / 2;
 
         return ret;
-    }
-}
-
-public class SherlockAndAnagramsTest
-{
-    [Theory]
-    [InlineData("abba", 4)]
-    [InlineData("abcd", 0)]
-    [InlineData("", 0)]
-    public void TestRun(string s, int retVal)
-    {
-        var res = SherlockAndAnagrams.Run(s);
-        Assert.Equal(retVal, res);
     }
 }

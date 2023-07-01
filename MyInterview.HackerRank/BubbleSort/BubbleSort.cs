@@ -1,6 +1,4 @@
-using Xunit.Abstractions;
-
-namespace MyInterview.Test;
+namespace MyInterview.Test.BubbleSort;
 
 public class BubbleSortTest
 {
@@ -23,23 +21,5 @@ public class BubbleSortTest
         Console.WriteLine($"First Element: {a[0]}");
         Console.WriteLine($"Last Element: {a[a.Count - 1]}");
         return a;
-    }
-}
-
-public class TestBubbleSortTest
-{
-    private readonly ITestOutputHelper _output;
-
-    public TestBubbleSortTest(ITestOutputHelper output)
-    {
-        this._output = output;
-    }
-
-    [Fact]
-    public void TestRun()
-    {
-        var ret = BubbleSortTest.Run(new List<int>(){3,2,1});
-        // _output.WriteLine($"{String.Join(",", ret)}");
-        Assert.Equal(new List<int>(){1,2,3}, ret);
     }
 }
