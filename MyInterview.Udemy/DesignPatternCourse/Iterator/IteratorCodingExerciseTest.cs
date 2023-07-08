@@ -13,17 +13,12 @@ public class InterpreterCodingExerciseTest
         _output = output;
     }
 
-    [Theory]
-    [InlineData("1+2", 3)]
-    [InlineData("1+2-3", 0)]
-    [InlineData("1+2+x", 103)]
-    [InlineData("1+2+xy+1", 0)]
-    [InlineData("0-0", 0)]
-    [InlineData("q+1000", 0)]
-    public void TestRun(string p, int[] retVal)
+    [Fact]
+    public void TestInterpreterCodingExercise()
     {
-        var root = new Node<int>(1);
+        var root = new TreeNode<int>(1, new TreeNode<int>(2), new TreeNode<int>(3));
         var ret = root.PreOrder.ToArray();
-        Assert.Equal(retVal, ret);
+        Assert.Equal(ret, new []{1,2,3});
+        
     }
 }

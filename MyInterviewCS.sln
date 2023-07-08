@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyInterview.CodeWars", "MyI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyInterview.Udemy", "MyInterview.Udemy\MyInterview.Udemy.csproj", "{FB88D1AE-C594-40EE-B5B6-5D18172EC397}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyInterview.Shared", "MyInterview.Shared\MyInterview.Shared.csproj", "{ABE86DFE-1E7F-43FD-8FCB-1472F4F80781}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,5 +42,9 @@ Global
 		{FB88D1AE-C594-40EE-B5B6-5D18172EC397}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB88D1AE-C594-40EE-B5B6-5D18172EC397}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB88D1AE-C594-40EE-B5B6-5D18172EC397}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABE86DFE-1E7F-43FD-8FCB-1472F4F80781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABE86DFE-1E7F-43FD-8FCB-1472F4F80781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABE86DFE-1E7F-43FD-8FCB-1472F4F80781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABE86DFE-1E7F-43FD-8FCB-1472F4F80781}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
